@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayMaps">
+
+    <TextView
+        android:id="@+id/tvLatitute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Latitute"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNome" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Longitude"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLatitute" />
+
+    <TextView
+        android:id="@+id/tvClassificacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Classificação"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLongitude" />
+
+    <TextView
+        android:id="@+id/tvProximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Proximidade"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvClassificacao" />
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Nome"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:text="Descrição"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProximity" />
+
+    <TextView
+        android:id="@+id/tvCampoNome"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:text="Nome da localização"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNome" />
+
+    <EditText
+        android:id="@+id/tvcampoLongitude"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="180dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textColor="@color/quantum_bluegrey500"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLongitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvLongitude"
+        tools:text='-8.272193210844494 ' />
+
+    <EditText
+        android:id="@+id/tvCampoLatitude"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="180dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textColor="@color/quantum_bluegrey500"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLatitute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvLatitute"
+        tools:text="39.5708718488321" />
+
+    <EditText
+        android:id="@+id/tvcampoClassificacao"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="180dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/quantum_bluegrey500"
+        app:layout_constraintBottom_toBottomOf="@+id/tvClassificacao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvClassificacao"
+        tools:text="4.4" />
+
+    <TextView
+        android:id="@+id/tvCampoProximidade"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="180dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvProximity"
+        tools:text="Proximidades" />
+
+    <TextView
+        android:id="@+id/tvcampoDescricao"
+        android:layout_width="348dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Insira uma descrição da localização."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescricao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
