@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "893333045156",
+    "project_id": "naviappdatabase",
+    "storage_bucket": "naviappdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893333045156:android:652a2ceb6582bb55e8cb31",
+        "android_client_info": {
+          "package_name": "com.example.loginfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893333045156-b4umttafjg59636m9v4qc4j54m1udulk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdKJRUdJIKRBmqKq7xECyZm6nIXbYzbK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893333045156-b4umttafjg59636m9v4qc4j54m1udulk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
