@@ -5,26 +5,23 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var tvCampoNome: EditText
-    private lateinit var tvCampoLatitude: EditText
-    private lateinit var tvcampoLongitude: EditText
-    private lateinit var tvcampoClassificacao: EditText
-    private lateinit var tvCampoProximidade: EditText
-    private lateinit var tvcampoDescricao: EditText
 
+    //@SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_maps)
 
-        tvCampoNome = findViewById(R.id.tvCampoNome)
-        tvCampoLatitude = findViewById(R.id.tvCampoLatitude)
-        tvcampoLongitude = findViewById(R.id.tvcampoLongitude)
-        tvcampoClassificacao = findViewById(R.id.tvcampoClassificacao)
-        tvCampoProximidade = findViewById(R.id.tvCampoProximidade)
-        tvcampoDescricao = findViewById(R.id.tvcampoDescricao)
+        val tvCampoNome: TextView = findViewById(R.id.tvCampoNome)
+        val tvCampoLatitude: TextView = findViewById(R.id.tvCampoLatitude)
+        val tvcampoLongitude: TextView = findViewById(R.id.tvcampoLongitude)
+        val tvcampoClassificacao: TextView = findViewById(R.id.tvcampoClassificacao)
+        val tvCampoProximidade: TextView = findViewById(R.id.tvCampoProximidade)
+        val tvcampoDescricao: TextView = findViewById(R.id.tvcampoDescricao)
     }
 
 
 }
+
