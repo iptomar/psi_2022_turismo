@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), FragmentNavigation {
         fAuth = Firebase.auth
 
         val currentUser = fAuth.currentUser
+        //if the current user is logged in the app opens on the home menu by default
         if(currentUser != null){
             supportFragmentManager.beginTransaction()
                 .add(R.id.container, HomeFragment()).addToBackStack(null)
@@ -40,5 +41,11 @@ class MainActivity : AppCompatActivity(), FragmentNavigation {
             transaction.addToBackStack(null)
         }
         transaction.commit()
+    }
+
+    internal fun onOpenMap() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container, MapFragment())
+            .commitNow()
     }
 }
