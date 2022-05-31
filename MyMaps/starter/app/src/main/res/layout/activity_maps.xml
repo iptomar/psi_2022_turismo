@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    tools:context=".DisplayMaps">
+
+    <fragment
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--        map:mapID="7eed8bcedff6295"
+                é necessário pesquisar porque não dá para
+                escolher o tipo de mapa
+                https://console.cloud.google.com/google/maps-apis/studio/maps/7eed8bcedff6295?project=earnest-coder-326617
+                -->
+
+
+
+</FrameLayout>
